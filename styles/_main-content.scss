@@ -1,0 +1,155 @@
+
+.main-content{
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgba(0, 151, 156, 1), rgba(0, 151, 156, 1), rgba(0, 151, 156, 0) );
+}
+.container{
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+//bem vindo!
+
+.welcome{
+    padding: 0px 24px;
+    min-height: 80vh;
+}
+
+.welcome-tittle{
+    padding-top: 64px;
+    margin-bottom: 46px;
+    h1{
+        margin-bottom: 32px;
+        text-align: center;
+        font-family: $font-cursive;
+        font-size: 120px;
+        font-weight: lighter;
+        color: $white-normal;
+        letter-spacing: 5px;
+    }
+    p{
+        margin: 0px auto;
+        max-width: 1000px;
+        text-align: justify;
+        font-family: $font-normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        color: rgba(27, 27, 27, 1);
+    }
+}
+
+.welcome-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+}
+
+.welcome-card{
+    min-height: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    div{
+        max-width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+    h2{
+        font-family: $font-welcome-card;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: rgba(43, 43, 43, 1);
+    }
+    p{
+        text-align: left;
+        font-family: $font-normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(27, 27, 27, 1);
+    }
+}
+
+#correcao-img{
+    img{
+        margin-top: -24px;
+        margin-bottom: -28px;
+    }
+}
+
+.pacotes{
+    min-height: 100vh;
+}
+
+ @media screen and (max-width: 1000px){
+    .welcome-tittle{
+        h1{
+            font-size: 96px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .welcome-card{
+        h2{
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+ }
+
+ @media screen and (max-width: 680px){
+    .welcome-details{
+        flex-wrap: wrap;
+    }
+ }
+//Nossos pacotes
+
+.pacotes{
+    margin-top: 72px;
+    max-width: 1400px;
+    .pacotes-tittle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 46px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .pacotes-details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+        flex-wrap: wrap;
+        
+        .pacotes-card{
+            box-shadow: rgba(0, 0, 0, 0.382) 5px 10px 20px 0px;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                margin-bottom: -5px;
+                transition: transform .5s ease;
+            }
+        }
+
+        .pacotes-card img:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+
+} 

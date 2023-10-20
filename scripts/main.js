@@ -7,7 +7,6 @@ function getResize(){
         }
     })
 }
-
 //responsavel por mostrar e remover o menu mobile.
 function showMobileMenu(boolean){
     const mobileMenu = document.querySelector('#mobile-menu');
@@ -16,10 +15,10 @@ function showMobileMenu(boolean){
     if(isTrueOpen || boolean){
         mobileMenu.classList.add('close')
         mobileMenu.classList.remove('open')
-        document.querySelector('.icon').src = 'styles/assets/menu-icon.svg'
+        //document.querySelector('.icon').src = 'styles/assets/menu-icon.svg'
     }else{
         mobileMenu.classList.add('open')
         mobileMenu.classList.remove('close')
-        document.querySelector('.icon').src = '../styles/assets/closed-icon.svg'
+        //document.querySelector('.icon').src = '../styles/assets/closed-icon.svg'
     }
 }

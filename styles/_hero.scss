@@ -1,0 +1,33 @@
+.container{
+
+}
+.hero{
+    width: 100%;
+    min-height: calc(100vh - 90px);
+    background-image: url('https://images.unsplash.com/photo-1663641024228-6d0d5dd21cb7?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /*mascára image hero*/
+    .bg-hero{
+        width: 100%;
+        min-height: calc(100vh - 90px);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+    }
+}
+
+.hero-logo{
+    position: absolute;
+    top: 50%;
+    max-width: 800px;
+    margin-left: 64px;
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:880px){
+
+}
+
