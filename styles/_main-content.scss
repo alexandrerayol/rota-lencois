@@ -1,7 +1,7 @@
 
 .main-content{
     width: 100%;
-    background-image: linear-gradient(to bottom,rgba(0, 151, 156, 1), rgba(0, 151, 156, 1), rgba(0, 151, 156, 0) );
+    background-image: linear-gradient(to bottom,rgba(0, 151, 156, 1), white );
 }
 .container{
     margin: 0px auto;
@@ -114,19 +114,22 @@
  }
 //Nossos pacotes
 
+.pacotes-tittle{
+    width: 500px;
+    margin: 64px auto 46px auto;
+    h2.primeiro-titulo{
+        text-indent: 72px;
+    }
+    p.segundo-titulo{
+        color: white;
+        text-shadow: none;
+    }
+    
+}
+
 .pacotes{
     margin-top: 72px;
     max-width: 1400px;
-    .pacotes-tittle{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 46px;
-
-        img{
-            width: 100%;
-        }
-    }
 
     .pacotes-details{
         display: flex;
@@ -150,6 +153,67 @@
             transform: scale(1.1);
         }
     }
+}
 
 
-} 
+.parceiros{
+    padding-bottom: 20vh;
+    .parceiros-details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 46px;
+        flex-wrap: wrap;
+        img{
+            width: 100%;
+        }
+
+        .parceiros-item{
+            max-width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+.parceiros-tittle{
+    width: 500px;
+    margin: 128px auto 46px auto;
+}
+h2.primeiro-titulo{
+    font-family: $font-cursive;
+    font-weight: lighter;
+    font-size: 120px;
+    color: rgb(255, 213, 0);
+    line-height: 16px;
+    text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.5);
+    text-indent: 36px;
+}
+p.segundo-titulo{
+    line-height: 135%;
+    font-family: $font-welcome-card;
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 0px 1px 12px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width:500px){
+    .parceiros-tittle, .pacotes-tittle{
+        max-width: 300px;
+    }
+    h2.primeiro-titulo{
+        text-indent: 12px;
+        font-size: 80px;
+    }
+    p.segundo-titulo{
+        font-size: 60px;
+    }
+    .parceiros-details{
+        flex-direction: column;
+    }
+    .pacotes-tittle{
+        h2.primeiro-titulo{
+            text-indent: 36px;
+        }
+    }
+}
