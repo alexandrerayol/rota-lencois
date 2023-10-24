@@ -46,7 +46,7 @@
 }
 
 .welcome-card{
-    width: 280px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,6 +242,9 @@ p.segundo-titulo{
     }
 
     //MEDIA QUERY WELCOME
+    .welcome{
+        padding: 0 10px;
+    }
     .welcome-tittle{
         h1{
             font-size: 50px;
@@ -249,6 +252,10 @@ p.segundo-titulo{
         p{
             font-size: 16px;
         }
+    }
+    
+    .welcome-card{
+        width: 150px;
     }
     .welcome-card-text{
         h2{

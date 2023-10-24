@@ -20,5 +20,41 @@
         }
 }
 
+.slider-control{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 16px;
+    top: 90%;
+    z-index: 1;
+    div{
+        width: 42px;
 
+        img{
+            width: 100%;
+            transition: .4s ease;
+            opacity: .7;
+        }
+    }
 
+    div:hover{
+        cursor: pointer;
+        img{
+            transform: scale(1.05);
+            opacity: .4;
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .slider-control{
+        top: 80%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .slider-control{
+        top: 75%;
+    }
+}

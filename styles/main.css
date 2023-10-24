@@ -201,6 +201,41 @@ nav {
   width: 100%;
 }
 
+.slider-control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 0 16px;
+  top: 90%;
+  z-index: 1;
+}
+.slider-control div {
+  width: 42px;
+}
+.slider-control div img {
+  width: 100%;
+  transition: 0.4s ease;
+  opacity: 0.7;
+}
+.slider-control div:hover {
+  cursor: pointer;
+}
+.slider-control div:hover img {
+  transform: scale(1.05);
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 1000px) {
+  .slider-control {
+    top: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .slider-control {
+    top: 75%;
+  }
+}
 .main-content {
   width: 100%;
   background-image: linear-gradient(to bottom, rgb(0, 151, 156), white);
@@ -248,7 +283,7 @@ nav {
 }
 
 .welcome-card {
-  width: 280px;
+  width: 460px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,11 +463,17 @@ p.segundo-titulo {
   .pacotes-tittle h2.primeiro-titulo {
     text-indent: 36px;
   }
+  .welcome {
+    padding: 0 10px;
+  }
   .welcome-tittle h1 {
     font-size: 50px;
   }
   .welcome-tittle p {
     font-size: 16px;
+  }
+  .welcome-card {
+    width: 150px;
   }
   .welcome-card-text h2 {
     font-size: 16px;
