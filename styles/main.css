@@ -464,13 +464,13 @@ p.segundo-titulo {
     text-indent: 36px;
   }
   .welcome {
-    padding: 0 10px;
+    padding: 0 16px;
   }
   .welcome-tittle h1 {
     font-size: 50px;
   }
   .welcome-tittle p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .welcome-card {
     width: 150px;
