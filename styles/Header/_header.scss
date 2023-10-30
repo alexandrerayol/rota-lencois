@@ -126,7 +126,6 @@ nav{
 @media screen and (max-width: 540px){
     .header-logo{
         width: 300px;
-        margin: 0 -16px;
     }
 }
 //telas menores que 440px
@@ -139,6 +138,6 @@ nav{
 //correção de bug menu em telas menores que 380px
 @media screen and (max-width: 380px){
     .header-logo{
-        width: 200px;
+        width: 280px;
     }
 }

@@ -157,7 +157,7 @@ p.segundo-titulo{
 @media screen and (max-width: 1000px){
     .welcome-tittle{
         h1{
-            font-size: 4rem;
+            font-size: 5rem;
         }
         p{
             font-size: 1.2rem;
@@ -175,14 +175,6 @@ p.segundo-titulo{
             font-size: 1.25rem;
         }
     }
-   .welcome-tittle{
-       h1{
-           font-size: 6rem;
-       }
-       p{
-           font-size: 1.1rem;
-       }
-   }
 
    .welcome-details{
     gap: 2rem;
@@ -242,6 +234,14 @@ p.segundo-titulo{
 }
 
 @media screen and (max-width:500px){
+    .welcome-tittle{
+        h1{
+            font-size: 4rem;
+        }
+    }
+
+
+
 
     .parceiros-tittle, .pacotes-tittle{
         max-width: 300px;

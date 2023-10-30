@@ -118,7 +118,6 @@ nav {
 @media screen and (max-width: 540px) {
   .header-logo {
     width: 300px;
-    margin: 0 -16px;
   }
 }
 @media screen and (max-width: 440px) {
@@ -128,7 +127,7 @@ nav {
 }
 @media screen and (max-width: 380px) {
   .header-logo {
-    width: 200px;
+    width: 280px;
   }
 }
 .menu {
@@ -389,7 +388,7 @@ p.segundo-titulo {
 
 @media screen and (max-width: 1000px) {
   .welcome-tittle h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .welcome-tittle p {
     font-size: 1.2rem;
@@ -403,12 +402,6 @@ p.segundo-titulo {
   }
   .welcome-card h2 {
     font-size: 1.25rem;
-  }
-  .welcome-tittle h1 {
-    font-size: 6rem;
-  }
-  .welcome-tittle p {
-    font-size: 1.1rem;
   }
   .welcome-details {
     gap: 2rem;
@@ -454,6 +447,9 @@ p.segundo-titulo {
   }
 }
 @media screen and (max-width: 500px) {
+  .welcome-tittle h1 {
+    font-size: 4rem;
+  }
   .parceiros-tittle, .pacotes-tittle {
     max-width: 300px;
   }
