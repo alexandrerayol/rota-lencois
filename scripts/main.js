@@ -110,3 +110,4 @@ function showDialogWhatsapp(){
         dialogBox.classList.add('open');
     }
 }
+
