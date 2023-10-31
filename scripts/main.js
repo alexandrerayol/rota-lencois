@@ -95,3 +95,18 @@ function showSlide() {
 }
 
 showSlide();
+
+//Whatsapp icon 
+
+function showDialogWhatsapp(){
+    const dialogBox = document.querySelector('.dialog-box');
+    const isOpen = dialogBox.classList.contains('open');
+
+    if(isOpen){
+        dialogBox.classList.add('close');
+        dialogBox.classList.remove('open');
+    }else{
+        dialogBox.classList.remove('close');
+        dialogBox.classList.add('open');
+    }
+}

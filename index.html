@@ -157,6 +157,27 @@
         <a href="https://facebook.com" target="_blank"><img src="styles/assets/footer/footer-icon-01.svg" alt="icone facebook"><a>
         <a href="https://instragram.com" target="_blank"><img src="styles/assets/footer/footer-icon-02.svg" alt="icone instragram"></a>
     </div>
-    <script src="scripts/main.js"></script>
+
+    <div class="whatsapp-container" >
+        <img id="whatsapp-icon" src="./styles/assets/whatsapp-button/whatsapp-icon.svg" alt="botão whatspapp" onclick="showDialogWhatsapp()">
+        <div class="dialog-box close">
+            <div class="dialog-header">
+                <div class="close-icon" onclick="showDialogWhatsapp()">
+                    <img src="./styles/assets/whatsapp-button/close-icon.svg" alt="icone fechar caixa dialogo">
+                </div>
+            </div>
+            <div class="dialog-menssage">
+                <h1>Rota lençois</h2>
+                <p>Olá,</p>
+                <p>Como posso ajudá-lo?</p>
+            </div>
+            <div class="dialog-footer">
+                <button class="dialog-button">
+                    <a href="">Iniciar Conversa</a>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="scripts/main.js"></script>
 </html>
