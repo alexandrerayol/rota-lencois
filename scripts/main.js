@@ -120,7 +120,7 @@ window.addEventListener('load', getNewNumber);
 
 function getNewNumber(){
 
-    const numeroAleatorio = Math.floor(Math.random() * 6);
+    const numeroAleatorio = Math.floor(Math.random() * 5);
     console.log(numeroAleatorio);
     const numberList = [
     {
@@ -145,6 +145,5 @@ function getNewNumber(){
     }
     ]
 
-    numberLink.href = `https://api.whatsapp.com/send/?phone=55${numberList[numeroAleatorio].number}&text=Ol%C3%A1%21+Quero+marcar+uma+viagem%21&type=phone_number&app_absent=0`
+    numberLink.href = `https://api.whatsapp.com/send/?phone=55${numberList[numeroAleatorio].number}&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0`
 }
-
