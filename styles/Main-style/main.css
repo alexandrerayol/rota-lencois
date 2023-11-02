@@ -102,11 +102,6 @@ nav {
   width: 100%;
 }
 
-@media screen and (min-width: 1001px) {
-  .header-mobile-menu {
-    display: none;
-  }
-}
 @media screen and (max-width: 1000px) {
   .header-links {
     display: none;
@@ -358,8 +353,7 @@ nav {
 }
 
 .parceiros-item {
-  max-width: 200px;
-  max-height: 200px;
+  width: 200px;
 }
 
 .parceiros-tittle {
@@ -433,9 +427,6 @@ p.segundo-titulo {
     margin: 0 10px;
     gap: 24px;
   }
-  .parceiros-item {
-    max-width: 150px;
-  }
 }
 @media screen and (max-width: 675px) {
   .pacotes-card {
@@ -471,7 +462,6 @@ p.segundo-titulo {
   }
 }
 footer {
-  min-height: 50vh;
   background-image: url("https://images.unsplash.com/photo-1509229198790-f1f7a21b24a7?auto=format&fit=crop&q=80&w=1631&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center center;
@@ -479,7 +469,7 @@ footer {
 }
 
 .footer-bg {
-  min-height: 50vh;
+  height: 50vh;
   width: 100%;
   background-image: linear-gradient(to top, transparent, transparent, rgba(255, 255, 255, 0.5), white);
 }
@@ -488,9 +478,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  height: 60px;
+  gap: 16px;
   background-color: rgb(0, 53, 49);
+  padding: 10px 0;
 }
 .footer-links a img {
   width: 42px;
@@ -523,7 +513,6 @@ footer {
 .dialog-box {
   background-color: white;
   width: 400px;
-  min-height: 300px;
   border-radius: 16px;
   position: absolute;
   bottom: 90px;
@@ -539,7 +528,7 @@ footer {
 
 .dialog-header {
   width: 100%;
-  height: 64px;
+  height: 4rem;
   background-color: rgb(58, 252, 187);
   display: flex;
   justify-content: end;
@@ -556,21 +545,21 @@ footer {
 }
 
 .dialog-menssage {
-  margin: 16px 0;
+  margin: 1rem 3rem;
   background-color: white;
   border-radius: 10px;
   margin-left: 16px;
   padding: 10px;
-  font-family: sans-serif;
-  max-width: 50%;
+  font-family: var(--font-normal);
 }
 .dialog-menssage h1 {
-  font-size: 16px;
+  font-size: 1rem;
   color: grey;
+  margin-bottom: 1rem;
 }
 .dialog-menssage p {
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 0.9rem;
+  line-height: 160%;
 }
 
 .dialog-footer {
@@ -586,29 +575,27 @@ footer {
 
 .dialog-button {
   width: 70%;
-  height: 36px;
+  padding: 0.25rem;
   background-color: rgb(55, 213, 161);
   border-radius: 16px;
   border: none;
 }
 .dialog-button a {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   text-decoration: none;
   color: white;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: sans-serif;
 }
-
-.dialog-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-.dialog-button:disabled a {
-  cursor: not-allowed;
+.dialog-button a img {
+  width: 28px;
+  height: 28px;
 }
 
 .open {
@@ -619,10 +606,15 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
   .dialog-box {
     width: 320px;
-    height: 220px;
+  }
+  .dialog-button {
+    width: 80%;
+  }
+  .dialog-menssage p {
+    font-size: 1rem;
   }
 }
 * {

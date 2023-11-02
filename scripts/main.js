@@ -1,12 +1,16 @@
 //fecha o menu mobile quando chega a 1000px
 function getResize(){
+    const mobileMenu = document.querySelector('#mobile-menu');
     window.addEventListener('resize', () => {
         const windowWidth = window.innerWidth;
-        if(windowWidth >= 1000){
-            
+        if(windowWidth >= 1001){
+            mobileMenu.style.display = 'none';
+        }else{
+            mobileMenu.style.display = 'flex';
         }
     })
 }
+window.addEventListener('resize', getResize)
 //responsavel por mostrar e remover o menu mobile.
 function showMobileMenu(boolean){
     const mobileMenu = document.querySelector('#mobile-menu');
@@ -93,7 +97,6 @@ function showSlide() {
 
     buttons[2].addEventListener('click',() =>  controlImages(1))
 }
-
 showSlide();
 
 //Whatsapp icon 
@@ -109,5 +112,39 @@ function showDialogWhatsapp(){
         dialogBox.classList.remove('close');
         dialogBox.classList.add('open');
     }
+}
+
+//Gerar números diferentes
+const numberLink = document.querySelector('#number-link');
+window.addEventListener('load', getNewNumber);
+
+function getNewNumber(){
+
+    const numeroAleatorio = Math.floor(Math.random() * 6);
+    console.log(numeroAleatorio);
+    const numberList = [
+    {
+        id: 1,
+        number: '9830421800'
+    },
+    {
+        id: 2,
+        number: '9830422029'
+    },
+    {
+        id: 3,
+        number: '9884018572'
+    },
+    {
+        id: 4,
+        number: '9884024390'
+    },
+    {
+        id: 5,
+        number: '9891508966'
+    }
+    ]
+
+    numberLink.href = `https://api.whatsapp.com/send/?phone=55${numberList[numeroAleatorio].number}&text=Ol%C3%A1%21+Quero+marcar+uma+viagem%21&type=phone_number&app_absent=0`
 }
 

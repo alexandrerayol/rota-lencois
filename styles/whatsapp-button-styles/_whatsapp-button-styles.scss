@@ -6,6 +6,7 @@
     right: 10px;
     bottom: 50px;
     margin: 16px 16px;
+
     img#whatsapp-icon{
         cursor: pointer;
         width: 100%;
@@ -20,13 +21,13 @@
 
 .whatsapp-container #whatsapp-icon:hover{
     transform: scale(1.1);
-    
 }
 
 .dialog-box{
     background-color: white;
+
     width: 400px;
-    min-height: 300px;
+
     border-radius: 16px;
     position: absolute;
     bottom: 90px;
@@ -44,7 +45,7 @@
 
 .dialog-header{
     width: 100%;
-    height: 64px;
+    height: 4rem;
     background-color: rgb(58, 252, 187);
     display: flex;
     justify-content: end;
@@ -61,21 +62,21 @@
 }
 
 .dialog-menssage{
-    margin: 16px 0;
+    margin: 1rem 3rem;
     background-color: white;
     border-radius: 10px;
     margin-left: 16px;
     padding: 10px;
-    font-family: sans-serif;
-    max-width: 50%;
+    font-family: var(--font-normal);
 
     h1{
-        font-size: 16px;
+        font-size: 1rem;
         color: grey;
+        margin-bottom: 1rem;
     }
     p{
-        font-size: 16px;
-        line-height: 150%;
+        font-size: .9rem;
+        line-height: 160%;
     }
 }
 
@@ -93,30 +94,33 @@
 
 .dialog-button{
     width: 70%;
-    height: 36px;
+    padding: .25rem;
     background-color: rgb(55, 213, 161);
     border-radius: 16px;
     border: none;
     a{
         width: 100%;
+        height: 100%;
+
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 6px;
+
         text-decoration: none;
         color: white;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1rem;
         font-family: sans-serif;
+
+        img{
+            width: 28px;
+            height: 28px;
+        }
     }
 }
 
-.dialog-button:disabled{
-    opacity: .5;
-    cursor: not-allowed;
-    a{
-        cursor: not-allowed;
-    }
-}
+
 
 .open{
     display: flex;
@@ -125,9 +129,17 @@
     display: none;
 }
 
-@media screen and (max-width: 440px){
+@media screen and (max-width: 500px){
     .dialog-box{
         width: 320px;
-        height: 220px;
+    }
+    .dialog-button{
+        width: 80%;
+    }
+
+    .dialog-menssage{
+        p{
+            font-size: 1rem;
+        }
     }
 }
