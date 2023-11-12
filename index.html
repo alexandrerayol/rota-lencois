@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home | Rota Lençóis Maranhenses</title>
     <link rel="stylesheet" href="./styles/Main-style/main.css">
+    <link rel="shortcut icon" href="/styles/assets/favicon/favicon.png" type="image/png" >
 </head>
 <body>
     <header>
@@ -16,9 +17,9 @@
                 <div class="header-links">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./passeios/index.html">Passeios</a></li>
-                        <li><a href="./pacotes/index.html">Pacotes</a></li>
-                        <li><a href="./transporte/index.html">Transporte</a></li>
+                        <li><a href="./pages/passeios/index.html">Passeios</a></li>
+                        <li><a href="./pages/pacotes/index.html">Pacotes</a></li>
+                        <li><a href="./pages/transporte/index.html">Transporte</a></li>
                     </ul>
                 </div>
 
@@ -33,13 +34,12 @@
                 </div>
             </nav>
     </header>
-
     <div id="mobile-menu" class="header-mobile-menu" >
             <ul>
                 <li><a href="./index.html">Home ↗</a></li>
-                <li><a href="./passeios/index.html">Passeios ↗</a></li>
-                <li><a href="./pacotes/index.html">Pacotes ↗</a></li>
-                <li><a href="./transporte/index.html">Transporte ↗</a></li>
+                <li><a href="./pages/passeios/index.html">Passeios ↗</a></li>
+                <li><a href="./pages/pacotes/index.html">Pacotes ↗</a></li>
+                <li><a href="./pages/transporte/index.html">Transporte ↗</a></li>
             </ul>
     </div>
 
@@ -155,14 +155,15 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-bg">
-        </div>
-    </footer>
-    <div class="footer-links">
+
+
+    <div class="bg-footer">
+    </div>
+    
+    <footer class="footer-links">
         <a href="https://facebook.com" target="_blank"><img src="styles/assets/footer/footer-icon-01.svg" alt="icone facebook"><a>
         <a href="https://instragram.com" target="_blank"><img src="styles/assets/footer/footer-icon-02.svg" alt="icone instragram"></a>
-    </div>
+    </footer>
 
     <div class="whatsapp-container" >
         <img id="whatsapp-icon" src="./styles/assets/whatsapp-button/whatsapp-icon.svg" alt="botão whatspapp" onclick="showDialogWhatsapp();">
@@ -189,4 +190,5 @@
 </body>
 <script type="module" src="scripts/database.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/slider.js"></script>
 </html>

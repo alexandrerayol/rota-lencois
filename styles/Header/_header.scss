@@ -135,3 +135,9 @@ nav{
         width: 280px;
     }
 }
+
+@media(min-width: 1000px){
+    #mobile-menu{
+        display: none;
+    }
+}
