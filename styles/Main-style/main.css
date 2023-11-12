@@ -602,11 +602,11 @@ p.segundo-titulo {
   height: 28px;
 }
 
-.open {
+.open-wpp {
   display: flex;
 }
 
-.close {
+.close-wpp {
   display: none;
 }
 

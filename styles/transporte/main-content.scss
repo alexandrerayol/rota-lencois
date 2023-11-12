@@ -37,7 +37,7 @@ main{
         align-items: center;
         justify-content: center;
         img{
-            width: 80%;
+            width: 90%;
         }
     }
     .right-images{
@@ -48,7 +48,7 @@ main{
         gap: 1rem;
 
         img{
-            width: 80%;
+            width: 90%;
             filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.2));
         }
     }
@@ -64,7 +64,7 @@ main{
         justify-content: center;
     }
 
-    .right-details{
+    .right-details, .right-images{
         img{
             width: 100%;
         }

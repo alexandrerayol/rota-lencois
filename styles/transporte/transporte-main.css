@@ -314,11 +314,11 @@ nav {
   height: 28px;
 }
 
-.open {
+.open-wpp {
   display: flex;
 }
 
-.close {
+.close-wpp {
   display: none;
 }
 
@@ -400,7 +400,7 @@ main {
   justify-content: center;
 }
 .right-section .right-details img {
-  width: 80%;
+  width: 90%;
 }
 .right-section .right-images {
   display: flex;
@@ -410,7 +410,7 @@ main {
   gap: 1rem;
 }
 .right-section .right-images img {
-  width: 80%;
+  width: 90%;
   filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.2));
 }
 
@@ -421,7 +421,7 @@ main {
     align-items: center;
     justify-content: center;
   }
-  .right-details img {
+  .right-details img, .right-images img {
     width: 100%;
   }
 }

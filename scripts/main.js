@@ -15,13 +15,13 @@ function showMobileMenu(boolean){
 //Whatsapp icon 
 function showDialogWhatsapp(){
     const dialogBox = document.querySelector('.dialog-box');
-    const isOpen = dialogBox.classList.contains('open');
+    const isOpen = dialogBox.classList.contains('open-wpp');
 
     if(isOpen){
-        dialogBox.classList.add('close');
-        dialogBox.classList.remove('open');
+        dialogBox.classList.add('close-wpp');
+        dialogBox.classList.remove('open-wpp');
     }else{
-        dialogBox.classList.remove('close');
-        dialogBox.classList.add('open');
+        dialogBox.classList.remove('close-wpp');
+        dialogBox.classList.add('open-wpp');
     }
 }
