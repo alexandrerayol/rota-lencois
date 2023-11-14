@@ -466,11 +466,20 @@ p.segundo-titulo {
     padding-bottom: 10vh;
   }
 }
-.bg-footer {
+.footer-blur {
+  width: 100%;
   height: 500px;
+  position: relative;
   background-image: url("../assets/footer/bg-footer.png");
   background-size: cover;
   background-position: center center;
+}
+
+.bg-footer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25), transparent, white);
 }
 
 .footer-links {
@@ -486,7 +495,7 @@ p.segundo-titulo {
 }
 
 @media (max-width: 500px) {
-  .bg-footer {
+  .footer-blur {
     height: 300px;
   }
 }

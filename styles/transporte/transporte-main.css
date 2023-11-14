@@ -178,11 +178,20 @@ nav {
   stroke-width: 6;
 }
 
-.bg-footer {
+.footer-blur {
+  width: 100%;
   height: 500px;
+  position: relative;
   background-image: url("../assets/footer/bg-footer.png");
   background-size: cover;
   background-position: center center;
+}
+
+.bg-footer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25), transparent, white);
 }
 
 .footer-links {
@@ -198,7 +207,7 @@ nav {
 }
 
 @media (max-width: 500px) {
-  .bg-footer {
+  .footer-blur {
     height: 300px;
   }
 }
@@ -335,7 +344,7 @@ nav {
 }
 .hero {
   height: 600px;
-  background-image: linear-gradient(to bottom, #79D2BD, #9AE2CD, #BBEBDF, #F5FFFE);
+  background-image: linear-gradient(to bottom, #79D2BD, #9AE2CD, #BBEBDF, #fff);
   margin-bottom: 64px;
 }
 
@@ -344,7 +353,7 @@ nav {
   height: 95%;
   margin: 0 auto;
   border-radius: 0px 0px 16px 16px;
-  background-image: url("../assets/pages/transporte/bg-onibus.png");
+  background-image: url("../assets/pages/transporte/bg-transporte.png");
   background-size: cover;
   background-position: center center;
   overflow: hidden;
@@ -360,6 +369,7 @@ nav {
   font-size: 7rem;
   margin-bottom: -10px;
   letter-spacing: 4px;
+  padding: 1rem;
 }
 .hero-content p {
   font-family: "Montserrat", sans-serif;
@@ -450,6 +460,10 @@ main {
 
 body {
   width: 100%;
-  height: 100vh;
-  background-color: #F5FFFE;
+}
+
+main {
+  background-color: rgba(245, 255, 254, 0.8078431373);
+  border-radius: 1rem;
+  filter: drop-shadow(1px 1px 24px rgba(0, 0, 0, 0.1));
 }/*# sourceMappingURL=transporte-main.css.map */
