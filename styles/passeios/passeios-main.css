@@ -178,294 +178,6 @@ nav {
   stroke-width: 6;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.slider {
-  margin: 0 auto;
-  max-width: 1920px;
-  max-height: 100vh;
-  overflow: hidden;
-  filter: drop-shadow(12px 12px 32px rgba(0, 0, 0, 0.5));
-}
-
-.slider-container {
-  width: 100%;
-  display: flex;
-  transition: 0.9s ease-in-out;
-  transform: translateX(0);
-}
-.slider-container img {
-  width: 100%;
-}
-
-.slider-control {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  padding: 0 16px;
-  top: 90%;
-  z-index: 1;
-}
-.slider-control div {
-  width: 42px;
-}
-.slider-control div img {
-  width: 100%;
-  transition: 0.2s ease;
-  opacity: 0.4;
-}
-.slider-control div:hover {
-  cursor: pointer;
-}
-.slider-control div:hover img {
-  opacity: 0.8;
-}
-
-@media screen and (max-width: 1000px) {
-  .slider-control {
-    top: 82%;
-  }
-}
-@media screen and (max-width: 420px) {
-  .slider-control {
-    top: 75%;
-  }
-}
-.main-content {
-  width: 100%;
-  background-image: linear-gradient(to bottom, rgb(0, 151, 156), white);
-}
-
-.container {
-  margin: 0px auto;
-  max-width: 1200px;
-}
-
-.welcome {
-  padding: 0 1.5rem;
-}
-
-.welcome-tittle {
-  padding-top: 4rem;
-  margin-bottom: 3rem;
-}
-.welcome-tittle h1 {
-  margin-bottom: 2rem;
-  text-align: center;
-  font-family: "Allison", cursive;
-  font-size: 7.5rem;
-  font-weight: lighter;
-  color: #fff;
-  letter-spacing: 0.25rem;
-}
-.welcome-tittle p {
-  margin: 0px auto;
-  max-width: 900px;
-  text-align: justify;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 150%;
-  color: rgb(27, 27, 27);
-}
-
-.welcome-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
-}
-
-.welcome-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-}
-.welcome-card img {
-  width: 120px;
-  height: 110px;
-}
-.welcome-card h2 {
-  font-family: "Anton", sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.12rem;
-  color: rgb(43, 43, 43);
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.welcome-card p {
-  text-align: justify;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.25rem;
-  color: rgb(27, 27, 27);
-}
-
-.pacotes-tittle {
-  width: 500px;
-  margin: 8rem auto 3rem auto;
-}
-.pacotes-tittle h2.primeiro-titulo {
-  text-indent: 72px;
-}
-.pacotes-tittle p.segundo-titulo {
-  color: white;
-  text-shadow: none;
-}
-
-.pacotes {
-  margin-top: 4rem;
-  max-width: 1400px;
-}
-.pacotes .pacotes-details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
-  flex-wrap: wrap;
-}
-.pacotes .pacotes-details .pacotes-card {
-  box-shadow: rgba(0, 0, 0, 0.382) 5px 10px 20px 0px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.pacotes .pacotes-details .pacotes-card img {
-  margin-bottom: -5px;
-  transition: transform 0.5s ease;
-}
-.pacotes .pacotes-details .pacotes-card img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.parceiros {
-  padding-bottom: 20vh;
-}
-
-.parceiros-details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 46px;
-}
-.parceiros-details img {
-  width: 100%;
-}
-
-.parceiros-item {
-  width: 200px;
-}
-
-.parceiros-tittle {
-  width: 500px;
-  margin: 128px auto 46px auto;
-}
-
-h2.primeiro-titulo {
-  font-family: "Allison", cursive;
-  font-weight: lighter;
-  font-size: 120px;
-  color: rgb(255, 213, 0);
-  line-height: 16px;
-  text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.5);
-  text-indent: 36px;
-}
-
-p.segundo-titulo {
-  line-height: 135%;
-  font-family: "Anton", sans-serif;
-  font-size: 100px;
-  text-align: center;
-  letter-spacing: 4px;
-  text-shadow: 0px 1px 12px rgba(255, 255, 255, 0.5);
-}
-
-@media screen and (max-width: 1000px) {
-  .welcome-tittle h1 {
-    font-size: 5rem;
-  }
-  .welcome-tittle p {
-    font-size: 1.2rem;
-  }
-  .welcome-details {
-    gap: 1rem;
-  }
-  .welcome-card img {
-    width: 64px;
-    height: 64px;
-  }
-  .welcome-card h2 {
-    font-size: 1.25rem;
-  }
-  .welcome-details {
-    gap: 2rem;
-  }
-  .welcome-card h2 {
-    font-size: 1.25rem;
-  }
-  .welcome-card p {
-    font-size: 1rem;
-  }
-  .welcome-card img {
-    width: 90px;
-    height: 90px;
-  }
-  .parceiros-tittle, .pacotes-tittle {
-    max-width: 500px;
-  }
-  h2.primeiro-titulo {
-    font-size: 100px;
-    text-indent: 76px;
-  }
-  p.segundo-titulo {
-    font-size: 80px;
-  }
-  .pacotes-tittle h2.primeiro-titulo {
-    text-indent: 105px;
-  }
-  .parceiros-details {
-    margin: 0 10px;
-    gap: 24px;
-  }
-}
-@media screen and (max-width: 675px) {
-  .pacotes-card {
-    height: 300px;
-  }
-  .pacotes-card img {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .welcome-tittle h1 {
-    font-size: 4rem;
-  }
-  .parceiros-tittle, .pacotes-tittle {
-    max-width: 300px;
-  }
-  h2.primeiro-titulo {
-    text-indent: 12px;
-    font-size: 80px;
-  }
-  p.segundo-titulo {
-    font-size: 60px;
-  }
-  .parceiros-details {
-    gap: 24px;
-  }
-  .pacotes-tittle h2.primeiro-titulo {
-    text-indent: 36px;
-  }
-  .parceiros {
-    padding-bottom: 10vh;
-  }
-}
 .footer-blur {
   width: 100%;
   height: 500px;
@@ -631,6 +343,85 @@ p.segundo-titulo {
     font-size: 1rem;
   }
 }
+.hero {
+  height: 600px;
+  background-image: linear-gradient(to bottom, #79D2BD, #9AE2CD, #BBEBDF, #fff);
+  margin-bottom: 64px;
+}
+
+.hero-content {
+  max-width: 1400px;
+  height: 95%;
+  margin: 0 auto;
+  border-radius: 0px 0px 16px 16px;
+  background-image: url("../assets/pages/passeios/bg-hero-dark-compress.png");
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  filter: drop-shadow(5px 5px 24px rgba(0, 0, 0, 0.5));
+}
+
+.hero-content h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 7rem;
+  margin-bottom: -10px;
+  letter-spacing: 4px;
+  padding: 1rem;
+  text-shadow: 0px 20px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+} 
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.passeio {
+  margin: 0 auto 4rem auto;
+  max-width: 1000px;
+  padding: 2rem;
+  background-color: #F5FFFE;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.1));
+}
+.passeio img {
+  width: 100%;
+}
+.passeio h2 {
+  width: 100%;
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #00979C;
+  font-family: "Montserrat", sans-serif;
+}
+.passeio p {
+  font-size: 1rem;
+  line-height: 175%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+.passeio a {
+  display: inline-block;
+  width: 200px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -656,6 +447,4 @@ p.segundo-titulo {
 
 body {
   width: 100%;
-  height: 100vh;
-  background-color: rgb(0, 151, 156);
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=passeios-main.css.map */
