@@ -90,15 +90,3 @@ function showDialogWhatsappByPaseios(){
 }
 
 window.addEventListener('load', getId)
-
-/*
-
-function executeAllFunctions(){
-    getId();
-    showDialogWhatsappByPaseios();
-}
-
-for(let i of passeiosButton){
-    i.addEventListener('click', executeAllFunctions);
-}
-*/
