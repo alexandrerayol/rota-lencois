@@ -308,7 +308,12 @@ nav {
 
 .pacotes-tittle {
   width: 500px;
+<<<<<<< HEAD
   margin: 8rem auto 3rem auto;
+=======
+  margin: 0 auto 0 auto;
+  margin-bottom: -8rem;
+>>>>>>> parent of aefe2ef (Revert "atualizações")
 }
 .pacotes-tittle h2.primeiro-titulo {
   text-indent: 72px;

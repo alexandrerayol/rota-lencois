@@ -348,6 +348,7 @@ nav {
     font-size: 1rem;
   }
 }
+<<<<<<< HEAD
 .hero {
   padding-top: 90px;
   height: 720px;
@@ -386,6 +387,8 @@ nav {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
 } 
+=======
+>>>>>>> parent of aefe2ef (Revert "atualizações")
 * {
   margin: 0;
   padding: 0;
@@ -411,6 +414,7 @@ nav {
 
 body {
   width: 100%;
+<<<<<<< HEAD
 }
 
 main {
@@ -488,4 +492,6 @@ section.right-section .right-tittle {
 }
 section.right-section .right-tittle img {
   width: 2.5rem;
+=======
+>>>>>>> parent of aefe2ef (Revert "atualizações")
 }/*# sourceMappingURL=main-pacotes-individual.css.map */
