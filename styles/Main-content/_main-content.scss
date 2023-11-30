@@ -1,9 +1,7 @@
-html{
-    scroll-behavior: smooth;
-}
+
 .main-content{
     width: 100%;
-    background-image: linear-gradient(to bottom,#4da4a7, white );
+    background-image: linear-gradient(to bottom,rgba(0, 151, 156, 1), white );
 }
 .container{
     margin: 0px auto;
@@ -42,7 +40,6 @@ html{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4rem;
-    margin-bottom: 6rem;
 }
 
 .welcome-card{
@@ -76,9 +73,8 @@ html{
 //Nossos pacotes
 
 .pacotes-tittle{
-    padding: 3rem;
     width: 500px;
-    margin: 0 auto 0 auto;
+    margin: 8rem auto 3rem auto;
     h2.primeiro-titulo{
         text-indent: 72px;
     }
@@ -98,7 +94,7 @@ html{
         justify-content: center;
         gap: 36px;
         flex-wrap: wrap;
-        padding-top: 100px;
+        
         .pacotes-card{
             box-shadow: rgba(0, 0, 0, 0.382) 5px 10px 20px 0px;
             border-radius: 10px;
